@@ -11,9 +11,10 @@ const Greeting = () => {
 
     return (
         <div style={{textAlign: 'center'}} className="greeting">
-            <h4>Welcome, {name}</h4>
+            <h4>Hey, {name}</h4>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">What may I call you? </label>
+                <div style={{marginTop: "20px"}}>
+                <label-left htmlFor="name">What may I call you? </label-left>
                 <input
                     className="inputField"
                     type="text"
@@ -22,7 +23,9 @@ const Greeting = () => {
                     value={inputName}
                     required="required"
                     onChange={e => setInputName(e.target.value)}
-                /><br/><br/>
+                />
+                </div>
+                <br/>
                 <input className="inputField" type="submit" value="Ok"/>
             </form>
         </div>
