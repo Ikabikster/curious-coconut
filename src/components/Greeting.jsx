@@ -11,9 +11,9 @@ const Greeting = () => {
 
     return (
         <div style={{textAlign: 'center'}} className="greeting">
-            <h3>Welcome, {name}</h3>
+            <h4>Welcome, {name}</h4>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="name">What to call you: </label>
+                <label htmlFor="name">What may I call you? </label>
                 <input
                     className="inputField"
                     type="text"
