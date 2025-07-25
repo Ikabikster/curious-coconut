@@ -15,15 +15,15 @@ const Greeting = () => {
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">What to call you: </label>
                 <input
-                    className="input"
+                    className="inputField"
                     type="text"
                     id="name"
                     name="name"
                     value={inputName}
-                    required="required" pattern="^[a-zA-Z]+$"
+                    required="required"
                     onChange={e => setInputName(e.target.value)}
                 /><br/><br/>
-                <input className="input" type="submit" value="Ok"/>
+                <input className="inputField" type="submit" value="Ok"/>
             </form>
         </div>
     )
