@@ -1,3 +1,16 @@
 body .inputField {
     width: 30% ;
+    margin-right: 6px;
+
+}
+
+body .submitButton {
+    width: 10% ;
+}
+
+body .labelLeft {
+    padding: 19px;
+    border: #2a7b6f 1px solid;
+    border-radius: 3px;
+    margin-right: 4px;
 }
