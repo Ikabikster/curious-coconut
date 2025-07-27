@@ -2,11 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import LinkButton from "../components/LinkButton";
+import Station from "../components/Station";
+import dog from "../assets/doggo.jpg"
+import astro from "../assets/astro.svg"
+
+
 ---
 
 <Layout>
     <Header/>
-    <div>ITS ME!</div>
+    <Station piclink={dog} time="2012-2056" name="Diese Firma..." text="Hello World!"/>
+    <Station piclink={astro} time="2012-2056" name="Diese Firma..." text="Hello World!"/>
     <LinkButton target="/" text="Back"/>
 </Layout>
 
