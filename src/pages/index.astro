@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Greeting from '../components/Greeting';
 import Header from "../components/Header.astro";
+import LinkButton from "../components/LinkButton";
 ---
 
 <Layout>
 	<Header/>
-	<Greeting  client:load />
+	<Greeting client:load />
+	<LinkButton target="about" text="About Me" />
 </Layout>
