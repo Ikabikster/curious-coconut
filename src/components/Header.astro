@@ -1,10 +1,10 @@
+---
+import LinkButton from './LinkButton.tsx';
+---
+
 <header>
     <div class="header">
         <p>Welcome to my Page!</p>
-        <form action="/src/pages/about">
-            <input class="submitButtonLink" type="submit" value="About Me" />
-        </form>
+        <LinkButton target="about"/>
     </div>
 </header>
-
-<!--TODO: Button in eigene Komponente. Evtl ein Link? Check Accessibility Guidelines!-->
