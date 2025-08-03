@@ -4,7 +4,7 @@ const Greeting = () => {
     const [name, setName] = useState("Stranger");
     const [inputName, setInputName] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         setName(inputName);
         setInputName("");
@@ -14,7 +14,7 @@ const Greeting = () => {
         <div style={{textAlign: 'center'}} className="greeting">
             <form onSubmit={handleSubmit}>
                 <div style={{marginTop: "20px"}}>
-                    <label-left className="labelLeft" htmlFor="name">What may I call you?  </label-left>
+                    <label className="labelLeft" htmlFor="name">What may I call you?  </label>
                     <input
                         className="inputField"
                         type="text"
