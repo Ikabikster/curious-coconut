@@ -22,7 +22,7 @@ const Greeting = () => {
                         name="name"
                         value={inputName}
                         placeholder="Your name"
-                        required="required"
+                        required={true}
                         onChange={e => setInputName(e.target.value)}
                     />
                 <input className="submitButton" type="submit" value="Ok"/>
