@@ -15,6 +15,8 @@ const Station = ({piclink, time, name, text}: StationProps ) => {
                 <source srcSet={piclink.src}/>
                 <img src={piclink.src} alt="Doggo with glasses"/>
             </picture>
+            <p>Bei {name} seit {time}</p>
+            <div>{text}</div>
         </div>
     );
 }
